@@ -1,0 +1,5 @@
+.wrapper_meals {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}

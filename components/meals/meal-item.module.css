@@ -1,0 +1,36 @@
+.meal__item_card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--text-color-light);
+}
+.meal__item_header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: start;
+}
+.text_header {
+    padding: 5px;
+}
+.meal_footer {
+    padding: 15px 10px;
+    min-height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.summary  {
+    font-size: 0.9rem;
+}
+.image {
+    width: 100%;
+    position: relative;
+    height: 15rem;
+}
+.image img {
+    object-fit: cover;
+}
+.actions {
+    margin-left: auto;
+}

@@ -1,0 +1,28 @@
+.wrapper_meals {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    padding-bottom: 40px;
+}
+.meals_header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: start;
+}
+.meals_header h1 {
+    font-size: 3rem;
+}
+.highlight {
+    color: #ff6600;
+}
+.meals_header p {
+    color: var(--text-color-primary);
+}
+.meals_header .cta a {
+    background-color: #ff6600;
+    padding: 10px 25px;
+    color: var(--text-color-light);
+    border-radius: 5px;
+}
