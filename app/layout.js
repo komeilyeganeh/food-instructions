@@ -1,7 +1,8 @@
-import { Inter } from "next/font/google"
+import { Inter } from "next/font/google";
+import { BackgroundSVG, MainHeader } from "@/components";
 import "./globals.css";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Food",
@@ -12,7 +13,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
+        <BackgroundSVG />
+        <div className="container">
+          <MainHeader />
+          {children}
+        </div>
       </body>
     </html>
   );

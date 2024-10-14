@@ -1,0 +1,21 @@
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+.logo img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+}
+.logo span {
+    font-size: 2rem;
+    color: var(--text-color-second);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+@media screen and (max-width: 768px) {
+    .logo span {
+        display: none;
+    }
+}
