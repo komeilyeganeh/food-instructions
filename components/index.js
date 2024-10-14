@@ -4,3 +4,6 @@ export * from "./background-svg/background-svg";
 export * from "./slide-show/slide-show"
 export * from "./meals/meals";
 export * from "./meals/meal-item";
+export * from "./header/nav-link";
+export * from "./meals/image-picker";
+export * from "./meals/meals-form-submit";

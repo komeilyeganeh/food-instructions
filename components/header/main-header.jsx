@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { Logo } from "..";
+import { Logo, NavLink } from "..";
 import classes from "./header.module.css";
 
 export const MainHeader = () => {
@@ -9,10 +8,10 @@ export const MainHeader = () => {
       <nav className={classes.navbar}>
         <ul>
           <li>
-            <Link href="/meals">Browse Meals</Link>
+            <NavLink href="/meals">Browse Meals</NavLink>
           </li>
           <li>
-            <Link href="/community">Foodies Community</Link>
+            <NavLink href="/community">Foodies Community</NavLink>
           </li>
         </ul>
       </nav>

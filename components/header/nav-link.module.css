@@ -1,0 +1,13 @@
+.link {
+  font-size: 1.2rem;
+  color: var(--text-color-light);
+  padding: 3px 20px;
+  transition: 0.2s linear;
+}
+.link:hover {
+  color: var(--text-color-second);
+  text-shadow: 2px 4px 4px #cbce00;
+}
+.active {
+  color: var(--text-color-second);
+}
