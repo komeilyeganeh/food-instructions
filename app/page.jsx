@@ -16,10 +16,10 @@ export default function Home() {
             aliquip ex ea commodo consequat.
           </p>
           <div className={classes.hero_btns}>
-            <Link href="/community" className={classes.primary}>
+            <Link href="/community" className={classes.outline}>
               Join the community
             </Link>
-            <Link href="/meals" className={classes.outline}>
+            <Link href="/meals" className={classes.primary}>
               Explore meals
             </Link>
           </div>
