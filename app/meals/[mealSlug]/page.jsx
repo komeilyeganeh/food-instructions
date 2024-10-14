@@ -20,7 +20,7 @@ export default function MealDetailPage({ params }) {
       </div>
       <div>
         <p className={classes.instructions} dangerouslySetInnerHTML={{
-            __html: meal.instructions
+            __html: meal.instructions.replace(/\n/g, '<br />')
         }}></p>
       </div>
     </>

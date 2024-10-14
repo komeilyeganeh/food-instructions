@@ -1,7 +1,7 @@
 import Link from "next/link";
 import classes from "./page.module.css";
 import { getMeals } from "@/lib/meals";
-import { MealsItems } from "@/components";
+import { Loading, MealsItems } from "@/components";
 import { Suspense } from "react"
 
 async function Meal() {
@@ -25,7 +25,7 @@ export default function Meals() {
           </p>
         </div>
         <div>
-          <Suspense fallback={<p>loading...</p>}>
+          <Suspense fallback={<Loading />}>
             <Meal />
           </Suspense>
         </div>

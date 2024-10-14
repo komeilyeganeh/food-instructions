@@ -9,20 +9,31 @@
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    align-items: start;
+    align-items: center;
+    text-align: center;
 }
 .meals_header h1 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .highlight {
-    color: #ff6600;
-}
-.meals_header p {
     color: var(--text-color-primary);
 }
+.meals_header p {
+    color: var(--text-color-gray);
+}
 .meals_header .cta a {
-    background-color: #ff6600;
+    background-color: var(--text-color-primary);
     padding: 10px 25px;
     color: var(--text-color-light);
     border-radius: 5px;
+}
+
+@media screen and (min-width: 576px) {
+    .meals_header {
+        align-items: start;
+        text-align: left;
+    }
+    .meals_header h1 {
+        font-size: 3rem;
+    }
 }

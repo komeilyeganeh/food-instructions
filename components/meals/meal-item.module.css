@@ -1,8 +1,8 @@
 .meal__item_card {
-    width: 300px;
+    width: 410px;
     border-radius: 10px;
     overflow: hidden;
-    background-color: var(--text-color-light);
+    background-color: #D0E7D2;
 }
 .meal__item_header {
     display: flex;
@@ -12,6 +12,10 @@
 }
 .text_header {
     padding: 5px;
+}
+.text_header p {
+    color: var(--text-color-gray);
+    font-size: 0.9rem;
 }
 .meal_footer {
     padding: 15px 10px;
@@ -33,4 +37,15 @@
 }
 .actions {
     margin-left: auto;
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-size: .8rem;
+    border: 1px solid var(--text-color-primary);
+    color: var(--text-color-primary);
+}
+
+@media screen and (min-width: 576px) {
+    .meal__item_card {
+        width: 350px;
+    }
 }

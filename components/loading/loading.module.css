@@ -1,0 +1,17 @@
+.loading {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border-top: 2px dashed var(--text-color-primary);
+    border-left: 2px dashed var(--text-color-primary);
+    border-bottom: transparent;
+    animation: run-loading 1s infinite;
+}
+@keyframes run-loading {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

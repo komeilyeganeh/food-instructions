@@ -10,7 +10,7 @@
 }
 .logo span {
     font-size: 2rem;
-    color: var(--text-color-second);
+    color: var(--text-color-light);
     text-transform: uppercase;
     font-weight: 600;
 }

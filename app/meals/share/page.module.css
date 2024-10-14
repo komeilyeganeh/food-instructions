@@ -3,30 +3,32 @@
     margin: 3rem auto 5rem auto;
     width: 90%;
     max-width: 75rem;
-    color: #ddd6cb;
     font-size: 1.5rem;
   }
   
   .header h1 {
+    color: var(--text-color-light);
     font-family: 'Montserrat', sans-serif;
+  }
+  .header p {
+    color: var(--text-color-gray);
   }
   
   .highlight {
-    background: linear-gradient(90deg, #f9572a, #ff8a05);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--text-color-primary);
   }
   
   .main {
     width: 90%;
     max-width: 75rem;
     margin: 3rem auto;
-    color: white;
   }
   
   .form {
     max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
   }
   
   .form label {
@@ -35,7 +37,7 @@
     font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    color: #b3aea5;
+    color: var(--text-color-gray);
     font-weight: bold;
   }
   
@@ -45,7 +47,8 @@
     width: 100%;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    border: 1px solid #454952;
+    border: none;
+    outline: none;
     font-size: 1.25rem;
     font-family: 'Montserrat', sans-serif;
   }
@@ -67,7 +70,7 @@
   .actions button {
     border: 0;
     padding: 0.75rem 2rem;
-    background: linear-gradient(90deg, #f9572a, #ff9b05);
+    background: var(--text-color-primary);
     border: none;
     color: #ffffff;
     border-radius: 2px;
@@ -75,17 +78,4 @@
     font: inherit;
     font-size: 1.25rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  .actions button:hover,
-  .actions button:focus {
-    background: linear-gradient(90deg, #fd4715, #f9b241);
-  }
-  
-  .actions button:disabled,
-  .actions button:hover:disabled,
-  .actions button:focus:disabled {
-    background: #ccc;
-    color: #979797;
-    cursor: not-allowed;
   }

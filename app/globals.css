@@ -1,13 +1,17 @@
 :root {
-  --text-color-primary: #888;
-  --text-color-second: #FFEB00;
-  --text-color-light: #f7f7f7;
+  --text-color-gray: #888;
+  --text-color-primary: #DF2E38;
+  --text-color-light: #DDF7E3;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body {
+  background-color: var(--text-color-light);
 }
 
 .container {
@@ -23,4 +27,48 @@ a {
 
 ul {
   list-style: none;
+}
+
+.not_found {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+}
+.not_found h1 {
+  font-size: 6rem;
+  color: var(--text-color-primary);
+}
+@keyframes fade-color {
+  0% {
+    color: var(--text-color-primary);
+  }
+  50% {
+    color: var(--text-color-primary);
+    opacity: 0.4;
+  }
+  100% {
+    color: var(--text-color-primary);
+  }
+}
+.not_found a {
+  padding: 5px 20px;
+  border: 2px solid var(--text-color-primary);
+  color: var(--text-color-primary);
+  animation: fade-color 1.1s infinite;
+}
+
+.error {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.error h1 {
+  font-size: 5rem;
+  color: var(--text-color-primary);
 }

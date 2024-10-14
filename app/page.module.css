@@ -20,12 +20,12 @@
 }
 .text_hero h2 {
   font-size: 3rem;
-  color: #ff6600;
+  color: var(--text-color-primary);
   text-transform: uppercase;
 }
 .text_hero p {
   font-size: 1.1rem;
-  color: var(--text-color-primary);
+  color: var(--text-color-gray);
 }
 .hero_btns {
   display: flex;
@@ -37,12 +37,12 @@
   padding: 10px 25px;
 }
 .hero_btns .primary {
-  background-color: #ff6600;
+  background-color: var(--text-color-primary);
   color: var(--text-color-light);
 }
 .hero_btns .outline {
-  border: 1px solid #ff6600;
-  color: #ff6600;
+  border: 1px solid var(--text-color-primary);
+  color: var(--text-color-primary);
 }
 
 .section_text {

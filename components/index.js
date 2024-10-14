@@ -7,3 +7,4 @@ export * from "./meals/meal-item";
 export * from "./header/nav-link";
 export * from "./meals/image-picker";
 export * from "./meals/meals-form-submit";
+export * from "./loading/loading"
